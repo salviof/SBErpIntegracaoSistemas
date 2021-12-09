@@ -22,7 +22,6 @@ public class CriarAnoacoes {
 
     @Test
     public void criarAnotacoes() {
-
         try {
             SBCore.configurar(new ConfigCoreApiERPContaPagarReceber(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
             for (ERPIntegracaoApiRestfull trassp : ERPIntegracaoApiRestfull.values()) {
