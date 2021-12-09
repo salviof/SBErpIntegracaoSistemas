@@ -1,0 +1,4 @@
+br/org/coletivoJava/fw/api/erp/contaPagarReceber/apiCore/ERPIntegracaoApiRestfull.class
+br/org/coletivoJava/fw/api/erp/contaPagarReceber/model/sistemaErp/ItfSistemaERPAtual.class
+br/org/coletivoJava/fw/api/erp/contaPagarReceber/model/sistemaErp/ItfSistemaErp.class
+br/org/coletivoJava/fw/api/erp/contaPagarReceber/apiCore/ItfIntegracaoERP.class

@@ -1,0 +1,9 @@
+VERSAO=1.0.0-RC-SNAPSHOT
+NOME_PROJETO=SBErpIntegracaoSistemas
+NOME_SOCIAL=SBErpIntegracaoSistemas
+TIPO_PROJETO=jar
+ENDERECO_WEB=http://salviof.github.io/SuperBits_FrameWork
+NOME_CLIENTE=coletivoJava
+GRUPO_PROJETO=erpColetivoJava
+NOME_BANCO=SBErpIntegracaoSistemasExemplo
+DIRETORIO_BASE=
