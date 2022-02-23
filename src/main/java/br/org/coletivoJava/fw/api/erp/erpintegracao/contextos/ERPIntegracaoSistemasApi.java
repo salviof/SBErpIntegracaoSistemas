@@ -14,7 +14,7 @@ import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 
 @ApiERPColetivoJavaFW(descricaoApi = "Integração Entre sistemas FWSB", nomeApi = "ERPIntegracao", slugInicial = "apiIntegracao")
-public enum ERPIntegracaoApiRestfull implements ItfApiErpSuperBits<ItfIntegracaoERP> {
+public enum ERPIntegracaoSistemasApi implements ItfApiErpSuperBits<ItfIntegracaoERP> {
 
     RESTFUL;
 

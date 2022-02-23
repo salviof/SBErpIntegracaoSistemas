@@ -5,7 +5,7 @@
  */
 package br.org.coletivoJava.testes.erp;
 
-import br.org.coletivoJava.fw.api.erp.erpintegracao.contextos.ERPIntegracaoApiRestfull;
+import br.org.coletivoJava.fw.api.erp.erpintegracao.contextos.ERPIntegracaoSistemasApi;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 //import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import org.apache.logging.log4j.LogManager;
@@ -24,7 +24,7 @@ public class CriarAnoacoes {
     public void criarAnotacoes() {
         try {
             SBCore.configurar(new ConfigCoreApiERPContaPagarReceber(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
-            for (ERPIntegracaoApiRestfull trassp : ERPIntegracaoApiRestfull.values()) {
+            for (ERPIntegracaoSistemasApi trassp : ERPIntegracaoSistemasApi.values()) {
 
                 GeradorAPIERP gerador = new GeradorAPIERP(trassp);
                 gerador.salvarEmDiretorioPadraoSubstituindoAnterior();

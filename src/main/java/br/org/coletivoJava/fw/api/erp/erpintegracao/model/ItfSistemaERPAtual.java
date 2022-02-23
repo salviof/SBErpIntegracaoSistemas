@@ -5,11 +5,13 @@
  */
 package br.org.coletivoJava.fw.api.erp.erpintegracao.model;
 
+import com.super_bits.modulosSB.SBCore.modulos.erp.ItfSistemaERP;
+
 /**
  *
  * @author sfurbino
  */
-public interface ItfSistemaERPAtual extends ItfSistemaErp {
+public interface ItfSistemaERPAtual extends ItfSistemaERP {
 
     public String getChavePrivada();
 }
