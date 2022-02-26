@@ -51,7 +51,7 @@ public interface ItfIntegracaoERP {
 
     public JsonObject gerarConversaoObjetoToJson(ItfBeanSimples pJson);
 
-    public ItfRespostaAcaoDoSistema getRespostaAcaoDoSistema(SolicitacaoControllerERP pSolicitacao);
+    public ItfRespostaAcaoDoSistema gerarRespostaAcaoDoSistemaServico(SolicitacaoControllerERP pSolicitacao);
 
     public String executarAcaoPacoteServico();
 
