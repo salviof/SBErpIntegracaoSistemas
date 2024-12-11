@@ -11,7 +11,11 @@ import com.super_bits.modulosSB.SBCore.modulos.erp.ItfSistemaERP;
  *
  * @author sfurbino
  */
-public interface ItfSistemaERPAtual extends ItfSistemaERP {
+public interface ItfSistemaERPLocal extends ItfSistemaERP {
 
     public String getChavePrivada();
+
+    @Override
+    public String getUrlRecepcaoCodigo();
+
 }
