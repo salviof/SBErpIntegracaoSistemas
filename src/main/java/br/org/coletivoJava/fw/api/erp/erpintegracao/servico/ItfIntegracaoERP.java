@@ -4,7 +4,7 @@ import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfResposta
 import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfRespostaAcaoDoSistema;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfSistemaERP;
 import com.super_bits.modulosSB.SBCore.modulos.erp.SolicitacaoControllerERP;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfBeanSimples;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ComoEntidadeSimples;
 import jakarta.json.JsonObject;
 import java.util.List;
 import java.util.Map;
@@ -17,13 +17,13 @@ import br.org.coletivoJava.fw.api.erp.erpintegracao.model.ItfSistemaERPLocal;
  */
 public interface ItfIntegracaoERP {
 
-    public ItfResposta getResposta(ItfSistemaERP pSistema, String nomeAcao, ItfBeanSimples pParametro);
+    public ItfResposta getResposta(ItfSistemaERP pSistema, String nomeAcao, ComoEntidadeSimples pParametro);
 
-    public ItfResposta getRespostaComoAdmin(ItfSistemaERP pSistema, String nomeAcao, ItfBeanSimples pParametro);
+    public ItfResposta getRespostaComoAdmin(ItfSistemaERP pSistema, String nomeAcao, ComoEntidadeSimples pParametro);
 
     public String getRespostaJsonString(ItfRespostaAcaoDoSistema pResposta);
 
-    public List<String> getAcoesDisponiveis(ItfSistemaERP pSistema, String nomeAcao, ItfBeanSimples pParametro);
+    public List<String> getAcoesDisponiveis(ItfSistemaERP pSistema, String nomeAcao, ComoEntidadeSimples pParametro);
 
     public List<String> getAcoesDisponiveis(ItfSistemaERP pSistema, String nomeAcao);
 
@@ -47,26 +47,26 @@ public interface ItfIntegracaoERP {
 
     public ItfSistemaERP getSistemaByDominio(String pChavePublica);
 
-    public ItfBeanSimples gerarConversaoJsonStringToObjeto(ItfSistemaERP pSistema, String pJson);
+    public ComoEntidadeSimples gerarConversaoJsonStringToObjeto(ItfSistemaERP pSistema, String pJson);
 
-    public ItfBeanSimples gerarConversaoJsonStringToObjeto(String pJson);
+    public ComoEntidadeSimples gerarConversaoJsonStringToObjeto(String pJson);
 
-    public ItfBeanSimples gerarConversaoJsonToObjeto(ItfSistemaERP pSistema, JsonObject pJson);
+    public ComoEntidadeSimples gerarConversaoJsonToObjeto(ItfSistemaERP pSistema, JsonObject pJson);
 
-    public ItfBeanSimples gerarConversaoJsonToObjeto(JsonObject pJson);
+    public ComoEntidadeSimples gerarConversaoJsonToObjeto(JsonObject pJson);
 
     /**
      *
      * @param pSistema Servico Remoto Restfull
-     * @param pItemToJson Item do tipo @ItfBeanSimples que será transformado em
+     * @param pItemToJson Item do tipo @ComoEntidadeSimples que será transformado em
      * Json
      * @param pUsarIdComoIdRemoto Especifica se ao converter o item simples, o
      * id do item deve ser usado como id remoto correspondente
      * @return
      */
-    public JsonObject gerarConversaoObjetoToJson(ItfSistemaERP pSistema, ItfBeanSimples pItemToJson, boolean pUsarIdComoIdRemoto);
+    public JsonObject gerarConversaoObjetoToJson(ItfSistemaERP pSistema, ComoEntidadeSimples pItemToJson, boolean pUsarIdComoIdRemoto);
 
-    public JsonObject gerarConversaoObjetoToJson(ItfBeanSimples pJson);
+    public JsonObject gerarConversaoObjetoToJson(ComoEntidadeSimples pJson);
 
     public ItfRespostaAcaoDoSistema gerarRespostaAcaoDoSistemaServico(SolicitacaoControllerERP pSolicitacao);
 
