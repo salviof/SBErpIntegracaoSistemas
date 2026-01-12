@@ -10,7 +10,7 @@ package br.org.coletivoJava.fw.api.erp.erpintegracao.contextos;
  * @author desenvolvedorninja01
  */
 import br.org.coletivoJava.fw.api.erp.erpintegracao.servico.ItfIntegracaoERP;
-import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
+import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfServicoLinkDeEntidadesERP;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfServicoLinkEntreEntidadesErpRestfull;
@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.reflections.ReflectionUtils;
 
-@ApiERPColetivoJavaFW(descricaoApi = "Integração Entre sistemas FWSB", nomeApi = "ERPIntegracao", slugInicial = "apiIntegracao")
+@InfoApiERPCarameloCode(descricaoApi = "Integração Entre sistemas FWSB", nomeApi = "ERPIntegracao", slugInicial = "apiIntegracao")
 public enum ERPIntegracaoSistemasApi implements ItfApiErpSuperBits<ItfIntegracaoERP> {
 
     RESTFUL;
