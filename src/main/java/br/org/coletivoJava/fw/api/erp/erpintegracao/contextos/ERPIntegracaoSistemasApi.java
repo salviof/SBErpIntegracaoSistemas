@@ -12,7 +12,6 @@ package br.org.coletivoJava.fw.api.erp.erpintegracao.contextos;
 import br.org.coletivoJava.fw.api.erp.erpintegracao.servico.ItfIntegracaoERP;
 import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
-import com.super_bits.modulosSB.SBCore.modulos.erp.ItfServicoLinkDeEntidadesERP;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfServicoLinkEntreEntidadesErpRestfull;
 import java.util.logging.Level;
 import java.util.logging.Logger;
